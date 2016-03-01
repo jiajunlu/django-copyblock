@@ -77,6 +77,12 @@ cache completely with (in ``settings.py``):
 
     COPYBLOCK_CACHE=False
 
+To use Python Markdown extensions, add extentions in the setting file:
+
+::
+
+    COPYBLOCK_MARKDOWN_EXT=['fenced_code']
+
 Serving Copyblock Files
 -----------------------
 
