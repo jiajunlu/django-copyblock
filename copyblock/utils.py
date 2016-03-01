@@ -20,10 +20,11 @@ def copydown(filepath, nocache=False, nomarkdown=False):
             if nomarkdown:
                 output = content
             else:
-                if not settings.COPYBLOCK_MARKDOWN_EXT:
-                    output = markdown(content)
-                else:
+                try:
+                    extension = settings.COPYBLOCK_MARKDOWN_EXT
                     output = markdown(content, extensions=settings.COPYBLOCK_MARKDOWN_EXT)
+                except AttributeError:
+                    output = markdown(content)
             CACHE[filepath] = output
         except IOError:
             exc_type, exc_value, exc_traceback = sys.exc_info()
