@@ -77,7 +77,7 @@ cache completely with (in ``settings.py``):
 
     COPYBLOCK_CACHE=False
 
-To use Python Markdown extensions, add extentions in the setting file:
+To use Python Markdown extensions, add extentions in the settings file:
 
 ::
 

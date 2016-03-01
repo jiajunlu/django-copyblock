@@ -49,7 +49,7 @@ When working on site copy, it can be helpful to turn off the Copyblock cache com
 
     COPYBLOCK_CACHE=False
 
-To use the Python Markdown extensions, add extension in the settings file.
+To use Python Markdown extensions, add extensions in the settings file:
 
     COPYBLOCK_MARKDOWN_EXT=['fenced_code']
 
